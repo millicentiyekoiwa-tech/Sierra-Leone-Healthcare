@@ -102,20 +102,20 @@ if not check_password():
 # ============================================================
 @st.cache_data
 def load_all_data():
-    covid          = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/covid_sierra_leone_clean (2).csv",
+   covid          = pd.read_csv("data/covid_sierra_leone_clean.csv",
                                   parse_dates=["date"])
-    ebola          = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/ebola_sierra_leone_clean (2).csv",
+    ebola          = pd.read_csv("data/ebola_sierra_leone_clean.csv",
                                   parse_dates=["report_date"])
-    ebola_sub      = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/ebola_sierra_leone_subtypes (2).csv")
-    ebola_district = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/ebola_district_sierra_leone.csv",
+    ebola_sub      = pd.read_csv("data/ebola_sierra_leone_subtypes.csv")
+    ebola_district = pd.read_csv("data/ebola_district_sierra_leone.csv",
                                   parse_dates=["date"])
-    causes         = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/causes_of_death_sierra_leone (2).csv")
-    covid_district = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/covid_district_sierra_leone.csv",
+    causes         = pd.read_csv("data/causes_of_death_sierra_leone.csv")
+    covid_district = pd.read_csv("data/covid_district_sierra_leone.csv",
                                   parse_dates=["date"])
-    malaria_map    = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/malaria_spatial_sierra_leone.csv")
-    malaria_ind    = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/malaria_indicators_sierra_leone.csv")
-    access         = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/access_health_sierra_leone.csv")
-    wash           = pd.read_csv("C:/Users/user/OneDrive/Desktop/Data.v2/wash_sierra_leone.csv")
+    malaria_map    = pd.read_csv("data/malaria_spatial_sierra_leone.csv")
+    malaria_ind    = pd.read_csv("data/malaria_indicators_sierra_leone.csv")
+    access         = pd.read_csv("data/access_health_sierra_leone.csv")
+    wash           = pd.read_csv("data/wash_sierra_leone.csv")
     return (covid, ebola, ebola_sub, ebola_district, causes,
             covid_district, malaria_map, malaria_ind, access, wash)
 
