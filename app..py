@@ -154,14 +154,14 @@ st.sidebar.markdown("""
 """, unsafe_allow_html=True)
 
 page = st.sidebar.radio("Navigate", [
-    "🏠 Overview",
-    "🦠 Ebola (2014–2016)",
-    "🦠 COVID-19 (2020–2024)",
-    "⚕️ Disease Burden & WASH",
-    "🦟 Malaria",
-    "🏥 Health System Access",
-    "📊 Compare Emergencies",
-    "🗺️ Sierra Leone Map"
+    " Overview",
+    " Ebola (2014–2016)",
+    "COVID-19 (2020–2024)",
+    " Disease Burden & WASH",
+    " Malaria",
+    " Health System Access",
+    " Compare Emergencies",
+    " Sierra Leone Map"
 ])
 
 st.sidebar.markdown("---")
@@ -184,13 +184,13 @@ st.sidebar.markdown("""
 # ============================================================
 # PAGE 1: OVERVIEW
 # ============================================================
-if page == "🏠 Overview":
+if page == "Overview":
     st.title("Sierra Leone Health Emergencies Dashboard")
     st.markdown("### A decade of crisis and resilience (2014–2024)")
     st.markdown(
         "This dashboard provides a comprehensive analytical view of Sierra Leone's "
-        "major health emergencies over the past decade — the 2014–2016 Ebola epidemic, "
-        "the 2020–2024 COVID-19 pandemic — alongside the country's everyday infectious "
+        "major health emergencies over the past decade, the 2014–2016 Ebola epidemic, "
+        "the 2020–2024 COVID-19 pandemic alongside the country's everyday infectious "
         "disease burden, malaria patterns, WASH-related mortality, and health system "
         "access indicators."
     )
@@ -214,7 +214,7 @@ if page == "🏠 Overview":
                    delta=f"{covid_sl['total_deaths'].max()/covid_sl['total_cases'].max()*100:.1f}% CFR",
                    delta_color="off")
     with col3:
-        st.metric("🦟 Top Cause of Death",
+        st.metric(" Top Cause of Death",
                    "Malaria",
                    delta="101.1 per 100k (2021)",
                    delta_color="off")
@@ -223,7 +223,7 @@ if page == "🏠 Overview":
                    delta="Males 78.9 vs Females 60.2",
                    delta_color="off")
     with col4:
-        st.metric("🏥 Facility Births",
+        st.metric(" Facility Births",
                    "~87%",
                    delta="Up from 54% in 2008",
                    delta_color="normal")
@@ -257,14 +257,14 @@ if page == "🏠 Overview":
         st.markdown("""
         <div class='insight-box'>
         <b>Infectious disease dominates Sierra Leone's burden</b><br><br>
-        54.4% of the top-15 causes of death in Sierra Leone are infectious diseases —
+        54.4% of the top-15 causes of death in Sierra Leone are infectious diseases 
         more than double the share of non-communicable disease (25.1%). Malaria alone
         kills at a rate of 101 per 100,000 population annually.<br><br>
-        <b>Ebola vs COVID-19:</b> While COVID-19 produced more total confirmed cases
-        (7,979 vs 14,122), Ebola's 28% CFR was 17x higher than COVID-19's 1.6% CFR,
+        <b>Ebola vs COVID-19:</b> While Ebola produced more total confirmed cases
+        (14,122 vs 7,979), Ebola's 28% CFR was 17x higher than COVID-19's 1.6% CFR,
         demanding fundamentally different response strategies.<br><br>
         <b>Geographic inequality:</b> Malaria prevalence ranges from 78% in Koinadugu
-        to just 3.8% in Western Urban — a 20x gap driven by access and infrastructure.
+        to just 3.8% in Western Urban a 20x gap driven by access and infrastructure.
         </div>
         """, unsafe_allow_html=True)
 
@@ -272,24 +272,24 @@ if page == "🏠 Overview":
         st.markdown("""
         | Page | What you'll find |
         |------|-----------------|
-        | 🦠 Ebola | Timeline, CFR trend, district spread |
-        | 🦠 COVID-19 | Waves, gender breakdown, vaccination |
-        | ⚕️ Disease Burden | Top causes, WASH gender gap |
-        | 🦟 Malaria | District prevalence, ITN coverage |
-        | 🏥 Health Access | Facility births, ANC, vaccination |
-        | 📊 Compare | Side-by-side emergency comparison |
-        | 🗺️ Map | Sierra Leone district map |
+        |  Ebola | Timeline, CFR trend, district spread |
+        | COVID-19 | Waves, gender breakdown, vaccination |
+        |  Disease Burden | Top causes, WASH gender gap |
+        |  Malaria | District prevalence, ITN coverage |
+        |  Health Access | Facility births, ANC, vaccination |
+        |  Compare | Side-by-side emergency comparison |
+        |  Map | Sierra Leone district map |
         """)
 
 
 # ============================================================
 # PAGE 2: EBOLA
 # ============================================================
-elif page == "🦠 Ebola (2014–2016)":
+elif page == " Ebola (2014–2016)":
     st.title("Ebola Virus Disease Outbreak (2014–2016)")
     st.markdown(
         "Sierra Leone was the most affected country in the largest Ebola outbreak "
-        "in history, recording more cases than any other nation in the epidemic."
+        "in history, recording more cases than any other nation during the 2014-2016 West Africa Outbreak."
     )
 
     col1, col2, col3, col4 = st.columns(4)
@@ -424,7 +424,7 @@ elif page == "🦠 Ebola (2014–2016)":
 # ============================================================
 # PAGE 3: COVID-19
 # ============================================================
-elif page == "🦠 COVID-19 (2020–2024)":
+elif page == " COVID-19 (2020–2024)":
     st.title("COVID-19 Pandemic (2020–2024)")
     st.markdown(
         "Sierra Leone experienced four distinct waves of COVID-19 infection. "
@@ -627,7 +627,7 @@ elif page == "⚕️ Disease Burden & WASH":
         st.markdown("""
         <div class='insight-box'>
         <b>54.4%</b> of the top-15 death burden comes from infectious
-        disease — more than double the NCD share (25.1%). This confirms
+        disease more than double the NCD share (25.1%). This confirms
         that routine disease control delivers more lives saved per dollar
         than emergency-only response capacity.
         </div>
@@ -679,7 +679,7 @@ elif page == "⚕️ Disease Burden & WASH":
 # ============================================================
 # PAGE 5: MALARIA
 # ============================================================
-elif page == "🦟 Malaria":
+elif page == " Malaria":
     st.title("Malaria — Sierra Leone's Leading Cause of Death")
     st.markdown(
         "Malaria kills more people in Sierra Leone than any other single cause, "
@@ -879,11 +879,11 @@ elif page == "🏥 Health System Access":
 # ============================================================
 # PAGE 7: COMPARE EMERGENCIES
 # ============================================================
-elif page == "📊 Compare Emergencies":
+elif page == " Compare Emergencies":
     st.title("Comparing Health Emergencies")
     st.markdown(
         "A side-by-side analytical comparison of Sierra Leone's two major "
-        "health emergencies — Ebola (2014–2016) and COVID-19 (2020–2024)."
+        "health emergencies Ebola (2014–2016) and COVID-19 (2020–2024)."
     )
 
     # Summary table
@@ -912,7 +912,7 @@ elif page == "📊 Compare Emergencies":
     <div class='insight-box'>
     <b>Key finding:</b> While COVID-19 produced more total confirmed cases
     ({:,} vs {:,}), Ebola's CFR of {:.1f}% was <b>17x higher</b> than
-    COVID-19's {:.1f}% CFR — reflecting Ebola's extreme severity even at
+    COVID-19's {:.1f}% CFR reflecting Ebola's extreme severity even at
     lower case volumes. These two emergencies demanded fundamentally
     different public health responses.
     </div>
@@ -994,7 +994,7 @@ elif page == "📊 Compare Emergencies":
 # ============================================================
 # PAGE 8: SIERRA LEONE MAP
 # ============================================================
-elif page == "🗺️ Sierra Leone Map":
+elif page == "Sierra Leone Map":
     st.title("Sierra Leone — Geographic Overview")
     st.markdown(
         "Sierra Leone is divided into 4 provinces and 16 districts. "
