@@ -910,7 +910,7 @@ elif page == "📊 Compare Emergencies":
 
     st.markdown("""
     <div class='insight-box'>
-    <b>Key finding:</b> While COVID-19 produced more total confirmed cases
+    <b>Key finding:</b> Ebola produced more total confirmed cases
     ({:,} vs {:,}), Ebola's CFR of {:.1f}% was <b>17x higher</b> than
     COVID-19's {:.1f}% CFR reflecting Ebola's extreme severity even at
     lower case volumes. These two emergencies demanded fundamentally
