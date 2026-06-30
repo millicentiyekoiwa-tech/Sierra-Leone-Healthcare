@@ -5,7 +5,11 @@ MSBA382 - Healthcare Analytics Individual Project
 A comprehensive analysis of health emergencies, disease burden,
 and health system access in Sierra Leone (2014-2024).
  
-
+Structure: ONE Streamlit page, organized into 3 tabs (no page reload,
+no separate URLs/sidebar navigation):
+  Tab 1: Overview & Disease Burden (incl. WASH)
+  Tab 2: Outbreaks - Ebola vs COVID-19 (incl. direct comparison)
+  Tab 3: Malaria, Health Access & Map
 """
  
 import streamlit as st
