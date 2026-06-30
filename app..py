@@ -161,7 +161,7 @@ page = st.sidebar.radio("Navigate", [
     " Malaria",
     " Health System Access",
     " Compare Emergencies",
-    "  Sierra Leone Map"
+    " Sierra Leone Map"
 ])
 
 st.sidebar.markdown("---")
@@ -994,7 +994,7 @@ elif page == " Compare Emergencies":
 # ============================================================
 # PAGE 8: SIERRA LEONE MAP
 # ============================================================
-elif page == "🗺️ Sierra Leone Map":
+elif page == " Sierra Leone Map":
     st.title("Sierra Leone — Geographic Overview")
     st.markdown(
         "Sierra Leone is divided into 4 provinces and 16 districts. "
