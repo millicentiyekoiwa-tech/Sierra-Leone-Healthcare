@@ -161,7 +161,7 @@ page = st.sidebar.radio("Navigate", [
     " Malaria",
     " Health System Access",
     " Compare Emergencies",
-    " Sierra Leone Map"
+    "  Sierra Leone Map"
 ])
 
 st.sidebar.markdown("---")
