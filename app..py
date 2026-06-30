@@ -154,7 +154,7 @@ st.sidebar.markdown("""
 """, unsafe_allow_html=True)
 
 page = st.sidebar.radio("Navigate", [
-    "Overview",
+    " Overview",
     " Ebola (2014–2016)",
     " COVID-19 (2020–2024)",
     " Disease Burden & WASH",
